@@ -8,74 +8,185 @@
   <script type="text/javascript"
           src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.js"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
 <div class="ui borderless topmenu menu">
   <div class="ui container">
-    <img class="ui image item" src="../images/wrc.png">
+    <img class="ui image item" src="../images/WRC Logo.png">
     <a class="ui right item" style="color: #CCC" href="../index.html">HOME</a>
     <a class="ui item" style="color: #CCC" href="classes.html">CLASSES</a>
     <a class="ui item" style="color: #CCC" href="news_events.html">NEWS/EVENTS</a>
     <a class="ui item" style="color: #CCC" href="registration.html">REGISTRATION</a>
-    <a class="ui item" style="color: #CCC" href="rules.html">RULES</a>
+    <a class="ui item" style="color: #CCC" href="rules.html">RULES/POLICIES</a>
     <a class="ui item" style="color: #CCC" href="feedback.html">FEEDBACK</a>
-    <a class="ui item" style="color: #CCC" href="faq's.html">FAQ'S</a>
+    <a class="ui item" style="color: #CCC" href="faq's.html">FAQs</a>
   </div>
 </div>
 
-<form class="ui form centered">
-  <div class="field">
-    <label>First Name</label>
-    <input name="first-name" placeholder="First Name" type="text">
-  </div>
-  <div class="field">
-    <label>Last Name</label>
-    <input name="last-name" placeholder="Last Name" type="text">
-  </div>
-  <div class="field">
-    <div class="ui checkbox">
-      <input tabindex="0" class="hidden" type="checkbox">
-      <label>I agree to the Terms and Conditions</label>
-    </div>
-  </div>
-  <button class="ui button" type="submit">Submit</button>
+<h1 align="center"> Membership Information</h1>
+<div class="ui container" align="center">
+<h2>
+	Memberships for the WRC are divided into four different categories.</h2><br>
+	<div class="grid-container" align="center">
+		<div class="grid-item">Category #</div>
+		<div class="grid-item">Who is in this Category</div>
+		<div class="grid-item">Membership Fee</div>
+	
+	<! Category 1>
+	<div class="grid-item">1</div>
+	<div class="grid-item">Returning UH Manoa Fee Paying Students</div>
+	<div class="grid-item">
+	<ul>
+	<li>Summer Session - $20.00</li>
+	</ul>
+	</div>
+	<! End Category 1>
+	
+	<! Category 2>
+	<div class="grid-item">2</div>
+	<div class="grid-item">
+	<ul>
+		<li>Current Non-Fee Paying Students & Program Participants</li>
+		<li>UH System Students</li>
+		<li>UH Manoa Graduate Students</li>
+		<li>UH Outreach College Students</li>
+		<li>NICE/HELP Program</li>
+		<li>Na Kapuna Senior Citizen Visitor Program Participants</li>
+		<li>East-West Center Stu/Participants</li>
+	</ul>
+	</div>
+	<div class="grid-item">
+	<ul>
+		<li>Fall/Spring Semester - $105.00 </li>
+		<li>Summer Session - $25.00</li>
+		<li>Monthly - $25.00</li>
+		<li>Weekly - $15.00</li>
+		<li>Daily - $5</li>
+	</ul>
+	</div>
+	<! Category 2 end>
+	
+	<! Category 3>
+	<div class="grid-item">3</div>
+	<div class="grid-item">
+	<ul>
+		<li>UH Manoa Faculty/Staff</li>
+		<li>UH System Faculty/Staff</li>
+		<li>RCUH</li>
+		<li>East-West Center Faculty/Staff</li>
+		<li>UH Foundation</li>
+		<li>UH Emeriti Faculty</li>
+	</ul>
+	</div>
+	<div class="grid-item">
+	<ul>
+		<li>Annual - $240.00</li>
+		<li>6 Month - $135.00</li>
+		<li>Monthly - $25.00</li>
+		<li>Weekly - $15.00</li>
+		<li>Daily $5.00</li>
+	</ul>
+	</div>
+	<! Category 3 end>
+	
+	<! Category 4>
+	<div class="grid-item">4</div>
+	<div class="grid-item">
+	<ul>
+		<li>Other UH Manoa Affiliate</li>
+		<li>UHM Spring 2008 - Present Alumni</li>
+	</ul>
+	</div>
+	<div class="grid-item">
+	<ul>
+		<li>Annual - $300.00</li>
+		<li>6 Month - $165.00</li>
+		<li>Monthly - $30.00</li>
+		<li>Weekly - $15.00</li>
+		<li>Daily $5.00</li>
+	</ul>
+	</div>
+	</div>
+	<! Category 4 end>
+</div>
+
+<div class="ui container" align="center">
+<form>
+	<div class="ui container" align="left">
+	First Name: <input name="first-name" placeholder="First Name" type="text"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Last Name: <input name="last-name" placeholder="Last Name" type="text"></div>
+	<div class="ui container" align="left">
+	<br>
+	Category Number: <select>
+	<option>1</option>
+	<option>2</option>
+	<option>3</option>
+	<option>4</option>
+	</select>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Membership Type: <select>
+	<option>Annual</option>
+	<option>6-month</option>
+	<option>Monthly</option>
+	<option>Weekly</option>
+	<option>Daily</option>
+	</select>
+	</div>
+	<br>
+	<div class="ui container" align="left">
+	Payment Type: <input type="radio" name="paymenttype" value="male" checked> <i class="fa fa-cc-visa" style="font-size:24px"></i></input> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="paymenttype" value="male" checked> <i class="fa fa-cc-mastercard" style="font-size:24px"></i></input> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="paymenttype" value="male" checked> <i class="fa fa-cc-amex" style="font-size:24px"></i></input> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="paymenttype" value="male" checked> <i class="fa fa-cc-discover" style="font-size:24px"></i></input> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="paymenttype" value="male" checked> <i class="fa fa-cc-mastercard" style="font-size:24px"></i></input> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</div>
+  <br>
+  <button type="button" onclick="alert('Thank you for registering for a Warrior Recreation Center Membership.')">Submit</button>
 </form>
+</div>
+<br>
 
-
-
+<!footer>
 <div class="footer-background">
   <div class="ui column grid">
-    <div class="row">
-      <div class="ui container">
-        <div class="centered three column">
-          Warrior Recreation Center
-        </div>
+    <div class="centered row">
+        <div class="centered column">
+          Created by Chad Palpallatoc and Mark McDermott
       </div>
     </div>
     <div class="row">
       <div class="ui grid container">
         <div class="centered wide column">
+		
+		<div class="ui grid container">
           <a class="item" style="color: #CCC"><i class="phone icon"></i></a>
           <div class="text">(808) 956-5490 </div>
+		</div>
+		<div class="ui grid container">
           <a class="item" style="color: #CCC"><i class="mail icon"></i></a>
           <div class="text">Email Us: rechi@hawaii.edu</div>
+		</div>
+		
+		<div class="ui grid container">
           <a class="item" style="color: #CCC"><i class="home icon"></i></a>
           <div class="text">University of Hawaii at Manoa - WRC 2505 Campus Road Honolulu, HI 96822</div>
+		</div>
+		<div class="ui grid container">
           <a class="item" style="color: #CCC"><i class="twitter icon"></i></a>
           <a class="fitted item" style="color: #CCC"><i class="facebook f icon"></i></a>
           <a class="fitted item" style="color: #CCC"><i class="instagram icon"></i></a>
           <a class=" fitted item" style="color: #CCC"><i class="pinterest icon"></i></a>
           <a class="fitted item" style="color: #CCC"><i class="tripadvisor icon"></i></a>
-
+		</div>
         </div>
 
       </div>
     </div>
   </div>
-
-
 </div>
+<!end footer>
 
 
 </body>
